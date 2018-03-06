@@ -6,7 +6,7 @@ import '../boolean_selector.dart';
 
 /// A selector that matches no inputs.
 class None implements BooleanSelector {
-  final variables = const [];
+  final List<String> variables = const [];
 
   const None();
 
