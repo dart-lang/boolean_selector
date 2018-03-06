@@ -1,6 +1,6 @@
 ## 1.0.3
 
-* Annotate the type of 'variables' in class All and class None.
+* Work around an inference bug in the new common front-end.
 
 ## 1.0.2
 
