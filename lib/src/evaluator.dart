@@ -15,7 +15,7 @@ class Evaluator implements Visitor<bool> {
 
   Evaluator(semantics)
       : _semantics = semantics is Iterable
-            ? semantics.toSet().cast().contains
+            ? semantics.toSet().contains
             : semantics as _Semantics;
 
   bool visitVariable(VariableNode node) => _semantics(node.name);
