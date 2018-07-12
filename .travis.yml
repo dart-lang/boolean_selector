@@ -6,7 +6,8 @@ dart:
 dart_task:
   - test: -p vm
     xvfb: false
-  - test: -p firefox
+  # Set concurrency to 1 to avoid flakes on Travis
+  - test: -p firefox -j 1
   - dartanalyzer
 
 matrix:
