@@ -18,7 +18,7 @@ class None implements BooleanSelector {
 
   BooleanSelector union(BooleanSelector other) => other;
 
-  void validate(bool isDefined(String variable)) {}
+  void validate(bool Function(String variable) isDefined) {}
 
   String toString() => "<none>";
 }

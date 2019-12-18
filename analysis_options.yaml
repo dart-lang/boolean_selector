@@ -1,4 +1,12 @@
 include: package:pedantic/analysis_options.yaml
+
+analyzer:
+  errors:
+    # Ignore still failing lints from latest pkg:pedantic
+    always_declare_return_types: ignore
+    annotate_overrides: ignore
+    prefer_single_quotes: ignore
+
 linter:
   rules:
     - avoid_null_checks_in_equality_operators

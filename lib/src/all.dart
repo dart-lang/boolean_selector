@@ -18,7 +18,7 @@ class All implements BooleanSelector {
 
   BooleanSelector union(BooleanSelector other) => this;
 
-  void validate(bool isDefined(String variable)) {}
+  void validate(bool Function(String variable) isDefined) {}
 
   String toString() => "<all>";
 }

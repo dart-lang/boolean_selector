@@ -23,7 +23,7 @@ class UnionSelector implements BooleanSelector {
 
   BooleanSelector union(BooleanSelector other) => UnionSelector(this, other);
 
-  void validate(bool isDefined(String variable)) {
+  void validate(bool Function(String variable) isDefined) {
     _selector1.validate(isDefined);
     _selector2.validate(isDefined);
   }

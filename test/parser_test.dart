@@ -258,7 +258,7 @@ Matcher _isVar(String name) => predicate(
     'is a variable named "$name"');
 
 void _expectToString(String selector, [String result]) {
-  if (result == null) result = selector;
+  result ??= selector;
   expect(_toString(selector), equals(result),
       reason: 'Expected toString of "$selector" to be "$result".');
 }

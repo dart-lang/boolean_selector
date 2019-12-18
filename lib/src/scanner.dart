@@ -41,7 +41,7 @@ class Scanner {
   /// Throws a [StateError] if a [TokenType.endOfFile] token has already been
   /// consumed.
   Token peek() {
-    if (_next == null) _next = _getNext();
+    _next ??= _getNext();
     return _next;
   }
 
@@ -50,7 +50,7 @@ class Scanner {
   /// Throws a [StateError] if a [TokenType.endOfFile] token has already been
   /// consumed.
   Token next() {
-    var token = _next == null ? _getNext() : _next;
+    var token = _next ?? _getNext();
     _endOfFileEmitted = token.type == TokenType.endOfFile;
     _next = null;
     return token;

@@ -48,7 +48,7 @@ class BooleanSelectorImpl implements BooleanSelector {
         : UnionSelector(this, other);
   }
 
-  void validate(bool isDefined(String variable)) {
+  void validate(bool Function(String variable) isDefined) {
     _selector.accept(Validator(isDefined));
   }
 
