@@ -6,7 +6,7 @@ description: >-
 homepage: https://github.com/dart-lang/boolean_selector
 
 environment:
-  sdk: '>=2.0.0 <3.0.0'
+  sdk: '>=2.4.0 <3.0.0'
 
 dependencies:
   source_span: ^1.0.0
