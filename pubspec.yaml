@@ -6,7 +6,7 @@ description: >-
 homepage: https://github.com/dart-lang/boolean_selector
 
 environment:
-  sdk: '>=2.4.0 <3.0.0'
+  sdk: '>=2.8.0-dev.10 <3.0.0'
 
 dependencies:
   source_span: ^1.0.0
@@ -20,3 +20,11 @@ dependency_overrides:
   test: 1.11.1
   test_api: 0.2.13
   test_core: 0.2.18
+  source_span:
+    git:
+      url: git://github.com/dart-lang/source_span.git
+      ref: null_safety
+  term_glyph:
+    git:
+      url: git://github.com/dart-lang/term_glyph.git
+      ref: null_safety
