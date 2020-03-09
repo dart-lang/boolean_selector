@@ -24,6 +24,10 @@ dependency_overrides:
     git:
       url: git://github.com/dart-lang/source_span.git
       ref: null_safety
+  string_scanner:
+    git:
+      url: git://github.com/dart-lang/string_scanner.git
+      ref: null_safety
   term_glyph:
     git:
       url: git://github.com/dart-lang/term_glyph.git

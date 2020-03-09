@@ -124,7 +124,7 @@ class Scanner {
   /// Scans and returns an identifier token.
   Token _scanIdentifier() {
     _scanner.expect(_hyphenatedIdentifier, name: 'expression');
-    return IdentifierToken(_scanner.lastMatch[0]!, _scanner.lastSpan);
+    return IdentifierToken(_scanner.lastMatch![0]!, _scanner.lastSpan!);
   }
 
   /// Consumes all whitespace and comments immediately following the cursor's
