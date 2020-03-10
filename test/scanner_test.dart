@@ -159,23 +159,23 @@ void main() {
     expect(token.span.start.offset, equals(1));
     expect(token.span.end.offset, equals(4));
 
-    token = scanner.next() as IdentifierToken;
+    token = scanner.next();
     expect(token.type, equals(TokenType.and));
     expect(token.span.start.offset, equals(5));
     expect(token.span.end.offset, equals(7));
 
-    token = scanner.next() as IdentifierToken;
+    token = scanner.next();
     expect(token.type, equals(TokenType.identifier));
-    expect(token.name, equals('bar'));
+    expect((token as IdentifierToken).name, equals('bar'));
     expect(token.span.start.offset, equals(8));
     expect(token.span.end.offset, equals(11));
 
-    token = scanner.next() as IdentifierToken;
+    token = scanner.next();
     expect(token.type, equals(TokenType.rightParen));
     expect(token.span.start.offset, equals(11));
     expect(token.span.end.offset, equals(12));
 
-    token = scanner.next() as IdentifierToken;
+    token = scanner.next();
     expect(token.type, equals(TokenType.endOfFile));
     expect(token.span.start.offset, equals(12));
     expect(token.span.end.offset, equals(12));
