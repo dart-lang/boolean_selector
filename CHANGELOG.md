@@ -1,6 +1,6 @@
-## 2.1.0-dev
+## 2.1.0-nullsafety
 
-* Migrate to NNBD. There are no expected semantic changes.
+* Migrate to null safety. There are no expected semantic changes.
 
 ## 2.0.0
 
