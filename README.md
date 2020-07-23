@@ -16,7 +16,7 @@ allowed, and identifiers may also contain hyphens. For example, `chrome`,
 selectors.
 
 A boolean selector is parsed from a string using
-[`new BooleanSelector.parse()`][parse], and evaluated against a set of variables
+[`BooleanSelector.parse()`][parse], and evaluated against a set of variables
 using [`BooleanSelector.evaluate()`][evaluate]. The variables are supplied as
 a function that takes a variable name and returns its value. For example:
 
@@ -28,7 +28,7 @@ a function that takes a variable name and returns its value. For example:
 import 'package:boolean_selector/boolean_selector.dart';
 
 void main(List<String> args) {
-  var selector = new BooleanSelector.parse("(x && y) || z");
+  var selector = BooleanSelector.parse("(x && y) || z");
   print(selector.evaluate((variable) => args.contains(variable)));
 }
 ```
