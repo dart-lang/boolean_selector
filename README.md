@@ -6,7 +6,7 @@ expressions. It can be used for filtering based on user-defined expressions. For
 example, the [`test`][test] package uses boolean selectors to allow users to
 define what platforms their tests support.
 
-[test]: http://github.com/dart-lang/test
+[test]: https://github.com/dart-lang/test
 
 The boolean selector syntax is based on a simplified version of Dart's
 expression syntax. Selectors can contain identifiers, parentheses, and boolean
