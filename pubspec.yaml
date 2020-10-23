@@ -15,6 +15,6 @@ dependencies:
 
 dev_dependencies:
   pedantic: ^1.10.0-nullsafety
-  test: any
-  test_api: any
-  test_core: any
+  test: ^1.16.0-nullsafety
+  test_api: ^0.2.19-nullsafety
+  test_core: ^0.3.12-nullsafety
