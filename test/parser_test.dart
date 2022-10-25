@@ -117,7 +117,7 @@ void main() {
       expect(left.right, _isVar('b'));
 
       expect(node.right, _isAndNode);
-      var right = node.left as AndNode;
+      var right = node.right as AndNode;
       expect(right.left, _isVar('c'));
       expect(right.right, _isVar('d'));
     });
@@ -170,7 +170,7 @@ void main() {
       expect(left.child, _isVar('a'));
 
       expect(node.right, _isNotNode);
-      var right = node.left as NotNode;
+      var right = node.right as NotNode;
       expect(right.child, _isVar('b'));
     });
 
