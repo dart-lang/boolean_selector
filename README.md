@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> This repo has moved to https://github.com/dart-lang/tools/tree/main/pkgs/boolean_selector
+
 [![Dart](https://github.com/dart-lang/boolean_selector/actions/workflows/test-package.yml/badge.svg)](https://github.com/dart-lang/boolean_selector/actions/workflows/test-package.yml)
 [![Pub Package](https://img.shields.io/pub/v/boolean_selector.svg)](https://pub.dev/packages/boolean_selector)
 [![package publisher](https://img.shields.io/pub/publisher/boolean_selector.svg)](https://pub.dev/packages/boolean_selector/publisher)
